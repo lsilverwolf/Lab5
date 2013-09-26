@@ -6,6 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="tab1">Home</string>
     <string name="tab2">Connections</string>
-    <string name="tab3">Explore</string>
+    <string name="tab3">Search</string>
 
 </resources>
