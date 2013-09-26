@@ -5,7 +5,14 @@ package com.mobileproto.lab5;
  */
 public class MentionNotification extends FeedNotification {
 
+    String userFrom;
+    String userTo;
+    String text;
+
     public MentionNotification(String userFrom, String userTo, String text){
         super(userFrom, userTo, text, "mention");
+        this.userFrom = userFrom;
+        this.userTo = userTo;
+        this.text = text;
     }
 }

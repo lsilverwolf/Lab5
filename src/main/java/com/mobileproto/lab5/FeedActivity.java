@@ -22,6 +22,8 @@ public class FeedActivity extends Activity {
 
         // Define view fragments
         FeedFragment feedFragment = new FeedFragment();
+        ConnectionFragment connectionFragment = new ConnectionFragment();
+        SearchFragment searchFragment = new SearchFragment();
 
         /*
          *  The following code is used to set up the tabs used for navigation.
@@ -35,10 +37,10 @@ public class FeedActivity extends Activity {
         feedTab.setTabListener(new NavTabListener(feedFragment));
 
         ActionBar.Tab connectionTab = actionBar.newTab().setText(R.string.tab2);
-        connectionTab.setTabListener(new NavTabListener(feedFragment));
+        connectionTab.setTabListener(new NavTabListener(connectionFragment));
 
         ActionBar.Tab searchTab = actionBar.newTab().setText(R.string.tab3);
-        searchTab.setTabListener(new NavTabListener(feedFragment));
+        searchTab.setTabListener(new NavTabListener(searchFragment));
 
         actionBar.addTab(feedTab);
         actionBar.addTab(connectionTab);
