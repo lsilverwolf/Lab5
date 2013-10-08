@@ -1,4 +1,4 @@
-/*
+
 package com.mobileproto.lab5;
 
 import android.content.Context;
@@ -7,15 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
-import java.util.Currency;
-
-*/
 /**
  * Created by wolflyra on 10/2/13.
- *//*
+ */
 
 public class TweetsListCursorAdapter extends CursorAdapter {
     private final LayoutInflater inflater;
@@ -28,29 +24,32 @@ public class TweetsListCursorAdapter extends CursorAdapter {
     }
 
     @Override
-    public View newView(Context context, Cursor cursor, ViewGroup parent) {
-        return inflater.inflate(R.layout.feed_item, parent, false);
+    public View newView(Context context, Cursor cursor, ViewGroup viewGroup) {
+        return inflater.inflate(R.layout.feed_item, viewGroup, false);
     }
 
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
         final ViewHolder holder;
-        holder = new ViewHolder(TweetDbAdapter.tweetFromCursor(cursor), (TextView) view.findViewById(R.id.feedItemUser));
+        holder = new ViewHolder(TweetDbAdapter.tweetFromCursor(cursor), (TextView) view.findViewById(R.id.feedItemUser),
+                (TextView) view.findViewById(R.id.feedText));
+        holder.titleTextView.setText(holder.tweet.getName());
+        holder.tweetTextView.setText(holder.tweet.getText());
         view.setTag(holder);
-
-        holder.titleTextView.setText(holder.FeedItem.getName());
 
     }
 
-    public class ViewHolder{
-        Tweet tweet;
-        TextView titleTextView;
-        ImageButton deleteButton;
 
-        private ViewHolder(Tweet tweet, TextView titleTextView) {
+    public class ViewHolder{
+        FeedItem tweet;
+        TextView titleTextView;
+        TextView tweetTextView;
+
+        private ViewHolder(FeedItem tweet, TextView titleTextView, TextView tweetTextView) {
             this.tweet = tweet;
             this.titleTextView = titleTextView;
+            this.tweetTextView = tweetTextView;
         }
     }
 }
-*/
+

@@ -20,10 +20,9 @@ public class TweetDbAdapter {
 
     private static final String TABLE_NAME = "tweets";
     private static final String COLUMN_ID = "_id";
-    private static final String COLUMN_USERFROM = "userfrom";
+    private static final String COLUMN_USER = "user";
     private static final String COLUMN_TWEET = "tweet";
-    private static final String COLUMN_USERTO = "userto";
-    private static final String COLUMN_TYPE = "type";
+    private static final String COLUMN_TIME = "time";
 
     private final Context context;
     private TweetsDbHelper dbHelper;
@@ -36,6 +35,7 @@ public class TweetDbAdapter {
     public TweetDbAdapter open(){
         dbHelper = new TweetsDbHelper(context);
         db = dbHelper.getWritableDatabase();
+        dbHelper.onUpgrade(db,0,1);  //This means that it is clearing the database ever time!
         return this;
     }
 
@@ -43,24 +43,21 @@ public class TweetDbAdapter {
         dbHelper.close();
     }
 
-
-    public FeedItem createTweet(String userName, String text) {
-
+    public FeedItem createTweet(String name, String tweet, long time) {
         ContentValues values = new ContentValues();
-        values.put(COLUMN_USERFROM, userName);
-        values.put(COLUMN_TWEET, text);
+        values.put(COLUMN_USER, name);
+        values.put(COLUMN_TWEET, tweet);
+        values.put(COLUMN_TIME, time);
         long id = db.insert(TABLE_NAME, null, values);
-
-        return new FeedItem(id, userName, text);
+        return new FeedItem(id, name, tweet, time);
     }
-
 
     public boolean deleteTweet(FeedItem tweet) {
         return db.delete(TABLE_NAME, COLUMN_ID + "=" + tweet.getId(), null) > 0;
     }
 
     public FeedItem getTweet(long id){
-        Cursor cursor = db.query(true, TABLE_NAME, new String[] {COLUMN_ID, COLUMN_USERFROM, COLUMN_TWEET}, COLUMN_ID + "=" + id, null, null, null, null, null);
+        Cursor cursor = db.query(true, TABLE_NAME, new String[] {COLUMN_ID, COLUMN_USER, COLUMN_TWEET, COLUMN_TIME}, COLUMN_ID + "=" + id, null, null, null, null, null);
         if (cursor != null) {
             cursor.moveToFirst();
         }
@@ -69,20 +66,25 @@ public class TweetDbAdapter {
     }
 
     public Cursor getAllTweets(){
-        return db.query(true, TABLE_NAME, new String[] {COLUMN_ID, COLUMN_USERFROM, COLUMN_TWEET}, null, null, null, null, null, null);
+        return db.query(true, TABLE_NAME, new String[] {COLUMN_ID, COLUMN_USER, COLUMN_TWEET, COLUMN_TIME}, null, null, null, null, null, null);
     }
 
     public static FeedItem tweetFromCursor(Cursor cursor){
         return new FeedItem(cursor.getLong(cursor.getColumnIndex(COLUMN_ID)),
-                cursor.getString(cursor.getColumnIndex(COLUMN_USERFROM)),
-                cursor.getString(cursor.getColumnIndex(COLUMN_TWEET)));
+                cursor.getString(cursor.getColumnIndex(COLUMN_USER)),
+                cursor.getString(cursor.getColumnIndex(COLUMN_TWEET)),
+                cursor.getLong(cursor.getColumnIndex(COLUMN_TIME)));
+    }
+
+    public void clearData(){
+        dbHelper.onUpgrade(db,0,1);  //This means that it is clearing the database ever time!
     }
 
 
     private class TweetsDbHelper extends SQLiteOpenHelper {
 
         private static final String CREATE_DATABASE = "CREATE TABLE " + TABLE_NAME + " (" +
-                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_USERFROM + " TEXT, " + COLUMN_TWEET + " TEXT)";
+                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_USER + " TEXT, " + COLUMN_TWEET + " TEXT, " + COLUMN_TIME + " TEXT)";
 
         public TweetsDbHelper(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);

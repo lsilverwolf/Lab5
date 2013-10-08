@@ -3,4 +3,12 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
+    <item android:id="@+id/action_tweet"
+        android:title="@string/action_tweet"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_refresh"
+        android:title="@string/refresh"
+        android:showAsAction="ifRoom"
+        />
+    <!-- Settings, should always be in the overflow -->
 </menu>

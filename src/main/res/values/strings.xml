@@ -10,5 +10,8 @@
     <string name="search_button">Search</string>
     <string name="textBoxUsername">textBoxUsername</string>
     <string name="textBoxTweet">textBoxTweet</string>
+    <string name="action_tweet">New</string>
+    <string name="createANewTweet">Create a New Tweet!</string>
+    <string name="refresh">refresh</string>
 
 </resources>
