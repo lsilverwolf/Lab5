@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
@@ -66,10 +67,15 @@ public class FeedActivity extends Activity {
                 //cursor.moveToFirst();
                 //Log.d("wolfpack", TweetDbAdapter.tweetFromCursor(cursor).toString());
                 return true;
+            case R.id.action_tweet:
+                MakeTweetDialog m = new MakeTweetDialog();
+                m.show(this.getFragmentManager(), null);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

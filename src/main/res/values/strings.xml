@@ -13,5 +13,7 @@
     <string name="action_tweet">New</string>
     <string name="createANewTweet">Create a New Tweet!</string>
     <string name="refresh">refresh</string>
+    <string name="MakeTweetDialog">Make Tweet</string>
+    <string name="MakeTweetCancelDialog">Cancel</string>
 
 </resources>

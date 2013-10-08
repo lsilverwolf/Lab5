@@ -20,18 +20,17 @@ public class TweetDetailAdapter extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tweet_detail);
         Intent intent = getIntent();
-        String userName = intent.getStringExtra("userName");
-        String text = intent.getStringExtra("text");
+        String userName = intent.getStringExtra("username");
+        String text = intent.getStringExtra("tweet");
 
 
 
         TextView username = (TextView) findViewById(R.id.textViewUsername);
         TextView tweetContent = (TextView) findViewById(R.id.textViewTweet);
 
-
-
         username.setText(userName);
         tweetContent.setText(text);
+
 
 
     }

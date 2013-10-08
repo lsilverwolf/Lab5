@@ -11,18 +11,16 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="wolfpack" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b5901ba-37e9-4d12-89ba-a71007e76a59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/new_tweet_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/MakeTweetDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDbAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDbAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetsListCursorAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetsListCursorAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/src/main/res/menu/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/SearchFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/SearchFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDetailAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDetailAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetListAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetListAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/new_tweet_dialog.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/new_tweet_dialog.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" />
     </list>
     <ignored path="Lab5.iws" />
@@ -41,6 +39,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -77,7 +76,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -90,11 +88,8 @@
       <file leaf-file-name="FeedFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="11" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="930">
-              <folding>
-                <element signature="e#1751#2272#0" expanded="true" />
-                <element signature="e#2261#2262#0" expanded="true" />
-              </folding>
+            <state line="64" column="5" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="885">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,87 +97,61 @@
       <file leaf-file-name="TweetListAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetListAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="12" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="43" column="70" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeedActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-14.269231" vertical-offset="799" max-vertical-offset="2955">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4245#4260#0" expanded="true" />
-                <element signature="e#6314#6328#0" expanded="true" />
-                <element signature="e#6496#6504#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="49" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="645">
-              <folding>
-                <element signature="e#488#506#0" expanded="true" />
-                <element signature="e#633#651#0" expanded="true" />
-                <element signature="e#1018#1036#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TweetDetailAdapter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDetailAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="35" selection-start="911" selection-end="911" vertical-scroll-proportion="0.6764706" vertical-offset="45" max-vertical-offset="555">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_tweet_detail.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_tweet_detail.xml">
+      <file leaf-file-name="feed_item.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/feed_item.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="18" column="35" selection-start="705" selection-end="705" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connection_item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/connection_item.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="MakeTweetDialog.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/MakeTweetDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TweetsListCursorAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetsListCursorAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="3" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="915">
+            <state line="40" column="28" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.33333334" vertical-offset="430" max-vertical-offset="1380">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1469#2116#0" expanded="true" />
+                <element signature="e#2097#2098#0" expanded="true" />
+                <element signature="e#2875#2890#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TweetDbAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDbAdapter.java">
+      <file leaf-file-name="SearchFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/SearchFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="20" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1530">
+            <state line="79" column="86" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1620">
+              <folding>
+                <element signature="e#1435#3467#0" expanded="true" />
+                <element signature="e#1722#3413#0" expanded="true" />
+                <element signature="e#3388#3389#0" expanded="true" />
+                <element signature="e#3456#3457#0" expanded="true" />
+                <element signature="e#3740#3754#0" expanded="true" />
+                <element signature="e#3922#3930#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_fragment.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/search_fragment.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="38" selection-start="982" selection-end="995" vertical-scroll-proportion="-12.888889" vertical-offset="42" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -191,7 +160,7 @@
       <file leaf-file-name="FeedItem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="945">
+            <state line="29" column="5" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
@@ -560,22 +529,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_tweet_detail.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/Tweet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetListAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/ConnectionListAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDetailAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/main_activity_actions.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/ic_action_search.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/new_tweet_dialog.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetsListCursorAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/res/menu/main.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDbAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedFragment.java" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDetailAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/DialogFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/new_tweet_dialog.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/MakeTweetDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/SearchFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetListAdapter.java" />
       </list>
     </option>
   </component>
@@ -609,6 +578,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -774,7 +744,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -822,6 +791,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -847,19 +829,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -973,13 +942,13 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.6708229" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.28678304" order="4" side_tool="true" content_ui="tabs" />
@@ -998,6 +967,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1005,13 +975,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.28678304" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.28678304" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1041,90 +1011,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="521" selection-end="521" vertical-scroll-proportion="0.3529412" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ic_launcher-web.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/feed_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="33" selection-start="703" selection-end="703" vertical-scroll-proportion="-7.888889" vertical-offset="57" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/feed_fragment.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="607" selection-end="615" vertical-scroll-proportion="0.41489363" vertical-offset="0" max-vertical-offset="470">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="301" selection-end="301" vertical-scroll-proportion="-0.029411765" vertical-offset="120" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/menu/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding>
-            <element signature="e#132#157#0" expanded="false" />
-            <marker date="1381197698000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetsListCursorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="915">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDbAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="20" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-14.269231" vertical-offset="799" max-vertical-offset="2955">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4245#4260#0" expanded="true" />
-            <element signature="e#6314#6328#0" expanded="true" />
-            <element signature="e#6496#6504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/connection_item.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1145,38 +1031,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetListAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="12" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+        <state line="32" column="49" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDetailAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="76" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/new_tweet_dialog.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="37" selection-start="673" selection-end="673" vertical-scroll-proportion="-9.444445" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetsListCursorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="5" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="43" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="11" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="930">
-          <folding>
-            <element signature="e#1751#2272#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="49" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="645">
-          <folding>
-            <element signature="e#488#506#0" expanded="true" />
-            <element signature="e#633#651#0" expanded="true" />
-            <element signature="e#1018#1036#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetDetailAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="35" selection-start="911" selection-end="911" vertical-scroll-proportion="0.6764706" vertical-offset="45" max-vertical-offset="555">
+        <state line="64" column="5" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="885">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="5" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="23" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/FeedActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="42" selection-start="1394" selection-end="1432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/search_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="38" selection-start="982" selection-end="995" vertical-scroll-proportion="-12.888889" vertical-offset="42" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/SearchFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="86" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1620">
+          <folding>
+            <element signature="e#1435#3467#0" expanded="true" />
+            <element signature="e#1722#3413#0" expanded="true" />
+            <element signature="e#3388#3389#0" expanded="true" />
+            <element signature="e#3456#3457#0" expanded="true" />
+            <element signature="e#3740#3754#0" expanded="true" />
+            <element signature="e#3922#3930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/feed_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="35" selection-start="705" selection-end="705" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/TweetListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="70" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab5/MakeTweetDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="28" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.33333334" vertical-offset="430" max-vertical-offset="1380">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1469#2116#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+            <element signature="e#2875#2890#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
